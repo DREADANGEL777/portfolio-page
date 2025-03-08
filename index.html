@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>PORTFOLIO</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="header__top">
+      <div class="header__logo">
+        <h2 class="header__logo-title">InVeStOr.</h2>
+      </div>
+      <div>
+        <ul class="header__links">
+          <li class="header__link">
+            <a href="#header__main" class="header__link-a" onclick="scrollToBlock(event)">HOME</a>
+          </li>
+          <li class="header__link">
+            <a href="#about" class="header__link-a" onclick="scrollToBlock(event)">ABOUT</a>
+          </li>
+          <li class="header__link">
+            <a href="#projects" class="header__link-a" onclick="scrollToBlock(event)">PROJECTS</a>
+          </li>
+          <li class="header__link">
+            <a href="#contact" class="header__link-a" onclick="scrollToBlock(event)">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="header__main" id="header__main">
+      <div class="header__social">
+        <a href="#" class="header__social-link">
+          <img src="images/linkedin-dark.svg" class="header__social-img" />
+        </a>
+        <a href="#" class="header__social-link">
+          <img src="images/twitter-dark.svg" class="header__social-img" />
+        </a>
+        <a href="#" class="header__social-link">
+          <img src="images/book-dark.svg" class="header__social-img" />
+        </a>
+        <a href="#" class="header__social-link">
+          <img src="images/github-dark.svg" class="header__social-img" />
+        </a>
+        <a href="#" class="header__social-link">
+          <img src="images/yt-dark.svg" class="header__social-img" />
+        </a>
+      </div>
+      <div class="header__description">
+        <h1 class="header__title">HEY, I'M InVeStOr</h1>
+        <p class="header__text">
+          A Result-Oriented Web Developer building and managing Websites and Web <br />
+          Applications that leads to the success of the overall product
+        </p>
+        <button class="header__btn">
+          <a href="#projects" onclick="scrollToBlock(event)">PROJECTS</a>
+        </button>
+      </div>
+    </div>
+    <div class="about" id="about">
+      <div class="container">
+        <div class="about__inner">
+          <div class="about__top">
+            <h2 class="about__title">ABOUT ME</h2>
+            <p class="about__text">
+              Here you will find more information about me, what I do, and my current skills mostly
+              in terms <br />
+              of programming and technology
+            </p>
+          </div>
+          <div class="about__main">
+            <div class="about__description">
+              <h2 class="description__title">Get to know me!</h2>
+              <div class="description__text">
+                <p>
+                  I'm a <span>Frontend Focused Web Developer</span> building and managing the
+                  Front-end of Websites and Web Applications that leads to the success of the
+                  overall product. Check out some of my work in the <span>Projects</span> section.
+                </p>
+                <br />
+                <p>
+                  I also like sharing content related to the stuff that I have learned over the
+                  years in <span>Web Development</span> so it can help other people of the Dev
+                  Community. Feel free to Connect or Follow me on my Linkedin and Instagram where I
+                  post useful content related to Web Development and Programming.
+                </p>
+                <br />
+                I'm open to <span>Job</span> opportunities where I can contribute, learn and grow.
+                If you have a good opportunity that matches my skills and experience then don't
+                hesitate to <span>contact</span> me.
+              </div>
+              <button class="description__btn">
+                <a href="#contact" onclick="scrollToBlock(event)">CONTACT</a>
+              </button>
+            </div>
+            <div class="about__skills">
+              <h2 class="skills__title">My Skills</h2>
+              <div class="skills__items-box">
+                <div class="skills__item">HTML</div>
+                <div class="skills__item">CSS</div>
+                <div class="skills__item">JAVASCRIPT</div>
+                <div class="skills__item">REACT</div>
+                <div class="skills__item">GITHUB</div>
+              </div>
+              <div class="skills__items-box">
+                <div class="skills__item">FIGMA</div>
+                <div class="skills__item">ANGULAR</div>
+                <div class="skills__item">VUE</div>
+                <div class="skills__item">TYPESCRIPT</div>
+                <div class="skills__item">REACT NATIVE</div>
+              </div>
+              <div class="skills__items-box">
+                <div class="skills__item">JAVA</div>
+                <div class="skills__item">SCRATCH</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="projects" id="projects">
+      <div class="container">
+        <div class="projects__inner">
+          <h2 class="projects__title">Projects</h2>
+          <p class="projects__text">
+            Here you will find some of the personal and clients projects that I created with each
+            project <br />
+            containing its own case study
+          </p>
+          <div class="projects__cont projects__cont-1">
+            <div class="project-item">
+              <img src="images/header-bg-1.jpg" class="project__item-img" />
+              <h2 class="project__item-title">Bootslander landing page</h2>
+              <p class="project__item-text">
+                This site is a modern landing page for promoting services. It uses dark and light
+                colors with accents of green buttons. The navigation menu contains links to sections
+                and a drop-down list.
+              </p>
+              <button class="project__item-btn">See a project</button>
+            </div>
+            <div class="project-item">
+              <img src="images/header-bg-2.jpg" class="project__item-img" />
+              <h2 class="project__item-title">Shop landing page</h2>
+              <p class="project__item-text">
+                This site is also a landing page for various products and services. It has a modern
+                design with clean blocks and bright colors. Each page shows a unique style according
+                to the brand.
+              </p>
+              <button class="project__item-btn">See a project</button>
+            </div>
+            <div class="project-item">
+              <img src="images/header-bg-3.jpg" class="project__item-img" />
+              <h2 class="project__item-title">HEIGHTS landing page</h2>
+              <p class="project__item-text">
+                This site is also a landing page aimed at promoting the training course. It has a
+                minimalist design with soft colors and attractive images. The main focus is on the
+                text and call-to-action button.
+              </p>
+              <button class="project__item-btn">See a project</button>
+            </div>
+          </div>
+          <div class="projects__cont projects__cont-2" id="projects__cont-2">
+            <div class="project-item">
+              <img src="images/header-bg-1.jpg" class="project__item-img" />
+              <h2 class="project__item-title">Bootslander landing page</h2>
+              <p class="project__item-text">
+                This site is a modern landing page for promoting services. It uses dark and light
+                colors with accents of green buttons. The navigation menu contains links to sections
+                and a drop-down list.
+              </p>
+              <button class="project__item-btn">See a project</button>
+            </div>
+            <div class="project-item">
+              <img src="images/header-bg-2.jpg" class="project__item-img" />
+              <h2 class="project__item-title">Shop landing page</h2>
+              <p class="project__item-text">lol</p>
+              <button class="project__item-btn">See a project</button>
+            </div>
+            <div class="project-item">
+              <img src="images/header-bg-3.jpg" class="project__item-img" />
+              <h2 class="project__item-title">HEIGHTS landing page</h2>
+              <p class="project__item-text">
+                This site is also a landing page aimed at promoting the training course. It has a
+                minimalist design with soft colors and attractive images. The main focus is on the
+                text and call-to-action button.
+              </p>
+              <button class="project__item-btn">See a project</button>
+            </div>
+          </div>
+          <button class="under__projects-btn" id="under__projects-btn" onclick="addProjects()">
+            SEE MORE PROJECTS
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="contact" id="contact">
+      <div class="container">
+        <div class="contact__inner">
+          <h2 class="contact__title">CONTACT</h2>
+          <p class="contact__text">
+            Feel free to Contact me by submitting the form below and I will get back to you as soon
+            as <br />
+            possible
+          </p>
+          <div class="form__cont" id="form__cont">
+            <div class="form__inner">
+              <form>
+                <div class="input-group">
+                  <label>Name</label>
+                  <input
+                    type="text"
+                    placeholder="Enter your name"
+                    id="contact-name"
+                    onkeyup="validateName()"
+                  />
+                  <span id="name-error"></span>
+                </div>
+
+                <div class="input-group">
+                  <label>Email</label>
+                  <input
+                    type="email"
+                    placeholder="Enter your email"
+                    id="contact-email"
+                    onkeyup="validateEmail()"
+                  />
+                  <span id="email-error"></span>
+                </div>
+
+                <div class="input-group">
+                  <label>Message</label>
+                  <textarea
+                    rows="5"
+                    placeholder="Enter your message"
+                    id="contact-message"
+                    onkeyup="validateMessage()"
+                  ></textarea>
+
+                  <span id="message-error"></span>
+                </div>
+
+                <div class="btn-cont">
+                  <button onclick="return validateForm()">Submit</button>
+                </div>
+                <span id="submit-error"></span>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__top">
+          <div class="footer__text-cont">
+            <h2 class="footer__title">DEMIAN INVESTOR</h2>
+            <p class="footer__text">
+              A Frontend focused Web Developer building the Frontend of Websites and <br />
+              Web Applications that leads to the success of the overall product
+            </p>
+          </div>
+          <div class="footer__social">
+            <h2 class="footer__title-social">SOCIAL</h2>
+            <div class="footer__text-social">
+              <a href="#" class="footer__social-link">
+                <img src="images/linkedin-ico.png" class="footer__social-img" />
+              </a>
+              <a href="#" class="footer__social-link">
+                <img src="images/twitter-ico.png" class="footer__social-img" />
+              </a>
+              <a href="#" class="footer__social-link">
+                <img src="images/github-ico.png" class="footer__social-img" />
+              </a>
+              <a href="#" class="footer__social-link">
+                <img src="images/yt-ico.png" class="footer__social-img" />
+              </a>
+              <a href="#" class="footer__social-link">
+                <img src="images/blog-ico.png" class="footer__social-img" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <p class="footer__bottom-text">© Copyright 2025 . Made by Demian InVeStOr</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
