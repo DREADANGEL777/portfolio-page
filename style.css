@@ -805,7 +805,7 @@ form button:hover {
   .under__projects-btn {
     padding: 16px;
   }
-  .footer__text{
+  .footer__text {
     font-size: 10px;
   }
 }
@@ -834,5 +834,118 @@ form button:hover {
   }
   .header__text {
     font-size: 10px;
+  }
+}
+
+@media (max-width: 151px) {
+  .header__links {
+    flex-wrap: wrap;
+  }
+  .header__link {
+    font-size: 12px;
+  }
+  .header__title {
+    font-size: 20px;
+  }
+  .header__text {
+    font-size: 6px;
+  }
+  .header__btn {
+    padding: 10px 15px;
+    font-size: 10px;
+  }
+  .about__title {
+    font-size: 20px;
+  }
+  .about__text {
+    font-size: 12px;
+  }
+  .description__title {
+    font-size: 15px;
+  }
+  .description__text {
+    font-size: 7px;
+  }
+  .description__text p span {
+    font-size: 9px;
+  }
+  .description__btn {
+    padding: 10px 15px;
+    font-size: 10px;
+  }
+  .skills__title {
+    font-size: 20px;
+  }
+  .skills__items-box {
+    gap: 1px;
+  }
+  .skills__item {
+    margin-top: 3px;
+    margin: 1px;
+    padding: 4px;
+    font-size: 4px;
+  }
+  .projects__title {
+    font-size: 20px;
+  }
+  .projects__text {
+    font-size: 8px;
+  }
+  .project__item-title {
+    font-size: 16px;
+  }
+  .project__item-text {
+    font-size: 6px;
+  }
+  .project__item-btn {
+    padding: 10px 15px;
+    font-size: 10px;
+  }
+  .project__item-img {
+    height: 150px;
+  }
+  .under__projects-btn {
+    padding: 12px 17px;
+    font-size: 10px;
+  }
+  .contact__title {
+    font-size: 20px;
+  }
+  .contact__text {
+    font-size: 10px;
+  }
+  .container form {
+    width: 120px;
+    padding: 10px 10px 7.5px;
+  }
+  .input-group input,
+  .input-group textarea {
+    width: 80px;
+    font-size: 10px;
+  }
+  ::placeholder {
+    font-size: 8px;
+  }
+  form button {
+    padding: 10px 15px;
+    font-size: 10px;
+  }
+  .footer__title {
+    font-size: 16px;
+  }
+  .footer__text {
+    font-size: 6px;
+  }
+  .footer__title-social {
+    font-size: 16px;
+  }
+  .footer__bottom-text {
+    font-size: 10px;
+  }
+  .footer__social-img {
+    margin-top: 10px;
+    margin-right: 5px;
+    width: 15px;
+    height: 15px;
   }
 }
