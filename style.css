@@ -41,6 +41,41 @@ label {
   display: block;
 }
 
+.dark-theme {
+  --primary-color: #524d4d6e;
+  --secondary-color: #ffffff;
+  --third-color: #baff39;
+  --fourth-color: #fff;
+  --fifth-color: #fff;
+  --sixth-color: #fff;
+  --seventh-color: #fff;
+  --eigths-color: #f3eded;
+  --ninths-color: #575454;
+  --ten-color: #575454;
+  --eleven-color: #fff;
+  --twelve-color: #d3d3d3;
+}
+
+:root {
+  --primary-color: #f8f7f7;
+  --secondary-color: #000000;
+  --third-color: #a64df4;
+  --fourth-color: #fff;
+  --fifth-color: #808080;
+  --sixth-color: #d3d3d3;
+  --seventh-color: #898686;
+  --eigths-color: #f3eded;
+  --ninths-color: #575454;
+  --ten-color: #000;
+  --eleven-color: #fff;
+  --twelve-color: #fff;
+}
+
+#icon {
+  width: 20px;
+  cursor: pointer;
+}
+
 .container {
   max-width: 1350px;
   margin: 0 auto;
@@ -56,7 +91,7 @@ label {
   margin: 0 auto;
   padding: 20px 50px;
   box-shadow: 0 5px 5px rgba(182, 182, 182, 0.75);
-  background-color: #fff;
+  background-color: var(--twelve-color);
   max-width: 100%;
 }
 
@@ -68,7 +103,7 @@ label {
   font-weight: 500;
   font-size: 40px;
   line-height: 1.3;
-  color: #000;
+  color: var(--secondary-color);
 }
 
 .header__links {
@@ -80,28 +115,39 @@ label {
 }
 
 .header__link-a {
-  color: #000;
-
+  color: var(--secondary-color);
   transition: all 0.3s;
 }
 
 .header__link-a:hover {
-  color: rgb(166, 77, 244);
+  color: var(--third-color);
 }
 
-.header__main {
+.dark__theme-bg {
+  background-image: url(./images/dark-grey-background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  max-width: 100%;
+  height: 100vh;
+}
+
+.white__theme-bg {
   background-image: url(./images/common-bg.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   max-width: 100%;
   height: 100vh;
+}
+
+.header__main {
   display: flex;
   align-items: center;
 }
 
 .header__social {
-  background-color: #fff;
+  background-color: var(--fourth-color);
   display: flex;
   flex-direction: column;
   flex-basis: 58px;
@@ -119,13 +165,13 @@ label {
   height: 40px;
   padding: 5px;
   margin: 2px;
-  background-color: #fff;
+  background-color: var(--fourth-color);
   transition: all 0.3s;
   border-radius: 2px;
 }
 
 .header__social-img:hover {
-  background-color: lightgray;
+  background-color: var(--eigths-color);
   border-radius: 2px;
 }
 
@@ -137,11 +183,12 @@ label {
 .header__title {
   font-size: 80px;
   font-weight: 700;
+  color: var(--secondary-color);
 }
 
 .header__text {
   margin-top: 25px;
-  color: gray;
+  color: var(--fifth-color);
   font-weight: normal;
   font-size: 16px;
 }
@@ -149,10 +196,10 @@ label {
 .header__btn {
   margin-top: 35px;
   border: 0;
-  background-color: rgb(166, 77, 244);
+  background-color: var(--third-color);
   padding: 20px 80px;
   border-radius: 5px;
-  color: #fff;
+  color: var(--fourth-color);
   font-weight: 900;
   font-size: 25px;
   transition: all 0.5s;
@@ -164,14 +211,14 @@ label {
 }
 
 .header__btn:hover {
-  color: rgb(166, 77, 244);
-  background-color: #fff;
+  color: var(--third-color);
+  background-color: var(--fourth-color);
 }
 
 .about {
   padding-top: 100px;
   padding-bottom: 100px;
-  background-color: #f8f7f7;
+  background-color: var(--primary-color);
 }
 
 .about__inner {
@@ -184,11 +231,12 @@ label {
 .about__title {
   font-weight: 500;
   font-size: 40px;
+  color: var(--secondary-color);
 }
 
 .about__text {
   margin-top: 35px;
-  color: rgb(137, 134, 134);
+  color: var(--seventh-color);
   font-size: 20px;
   font-weight: 400;
   line-height: 1.3;
@@ -211,17 +259,18 @@ label {
   font-size: 30px;
   line-height: 1.3;
   margin-bottom: 50px;
+  color: var(--secondary-color);
 }
 
 .description__text {
-  color: rgb(137, 134, 134);
+  color: var(--seventh-color);
   font-size: 18px;
   font-weight: 500;
   line-height: 1.3;
 }
 
 .description__text span {
-  color: gray;
+  color: var(--fifth-color);
   font-weight: 700;
   font-size: 20px;
 }
@@ -230,10 +279,10 @@ label {
   margin-top: 45px;
   margin-left: 5px;
   border: 0;
-  background-color: rgb(166, 77, 244);
+  background-color: var(--third-color);
   padding: 15px 40px;
   border-radius: 5px;
-  color: #fff;
+  color: var(--fourth-color);
   font-weight: 700;
   font-size: 22px;
   transition: all 0.5s;
@@ -245,8 +294,8 @@ label {
 }
 
 .description__btn:hover {
-  color: rgb(166, 77, 244);
-  background-color: #fff;
+  color: var(--third-color);
+  background-color: var(--fourth-color);
 }
 
 .about__skills {
@@ -257,6 +306,7 @@ label {
   font-size: 30px;
   line-height: 1.3;
   margin-bottom: 50px;
+  color: var(--secondary-color);
 }
 
 .skills__items {
@@ -271,12 +321,12 @@ label {
   margin-top: 15px;
   border-radius: 5px;
   padding: 15px;
-  background-color: lightgray;
+  background-color: var(--sixth-color);
   font-weight: 500;
 }
 
 .projects {
-  background-color: #f8f7f7;
+  background-color: var(--primary-color);
   padding-bottom: 50px;
 }
 
@@ -287,12 +337,13 @@ label {
   text-align: center;
   font-weight: 500;
   font-size: 50px;
+  color: var(--secondary-color);
 }
 
 .projects__text {
   text-align: center;
   margin-top: 35px;
-  color: rgb(119, 116, 116);
+  color: var(--seventh-color);
   font-size: 20px;
   font-weight: 400;
   line-height: 1.3;
@@ -303,7 +354,7 @@ label {
 .project-item {
   width: 30%;
   border-radius: 20px;
-  border: 5px solid gray;
+  border: 5px solid var(--fifth-color);
 }
 
 .project__item-img {
@@ -315,13 +366,13 @@ label {
 
 .project__item-title {
   padding-top: 25px;
-  color: #000;
+  color: var(--secondary-color);
   padding: 10px;
   font-size: 30px;
 }
 
 .project__item-text {
-  color: #000;
+  color: var(--secondary-color);
   padding: 10px;
 }
 
@@ -329,10 +380,10 @@ label {
   margin-top: 20px;
   margin: 10px;
   border: 0;
-  background-color: rgb(166, 77, 244);
+  background-color: var(--third-color);
   padding: 15px 40px;
   border-radius: 5px;
-  color: #fff;
+  color: var(--fourth-color);
   font-weight: 700;
   font-size: 22px;
   transition: all 0.5s;
@@ -340,18 +391,18 @@ label {
 }
 
 .project__item-btn:hover {
-  color: rgb(166, 77, 244);
-  background-color: #fff;
+  color: var(--third-color);
+  background-color: var(--fourth-color);
 }
 
 .under__projects-btn {
   margin-top: 20px;
   margin: 10px;
   border: 0;
-  background-color: rgb(166, 77, 244);
+  background-color: var(--third-color);
   padding: 25px 40px;
   border-radius: 5px;
-  color: #fff;
+  color: var(--fourth-color);
   font-weight: 700;
   font-size: 22px;
   transition: all 0.5s;
@@ -359,8 +410,8 @@ label {
 }
 
 .under__projects-btn:hover {
-  color: rgb(166, 77, 244);
-  background-color: #fff;
+  color: var(--third-color);
+  background-color: var(--fourth-color);
 }
 
 .projects__cont-1 {
@@ -389,13 +440,25 @@ label {
   margin-top: 50px;
 }
 
-.contact {
+.dark__theme-bg-2 {
+  background-image: url(./images/dark-grey-background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  max-width: 100%;
+  min-height: 100vh;
+}
+
+.white__theme-bg-2 {
   background-image: url(./images/common-bg.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   max-width: 100%;
   min-height: 100vh;
+}
+
+.contact {
   margin-top: 0;
 }
 
@@ -404,12 +467,13 @@ label {
   text-align: center;
   font-weight: 500;
   font-size: 50px;
+  color: var(--secondary-color);
 }
 
 .contact__text {
   text-align: center;
   margin-top: 35px;
-  color: rgb(119, 116, 116);
+  color: var(--seventh-color);
   font-size: 20px;
   font-weight: 400;
   line-height: 1.3;
@@ -424,7 +488,7 @@ label {
 
 .useful-links a {
   display: block;
-  color: #fff;
+  color: var(--fourth-color);
   text-decoration: none;
 }
 
@@ -440,7 +504,7 @@ label {
 
 .contact__me-h2 {
   font-size: 40px;
-  color: white;
+  color: var(--fourth-color);
   padding-top: 0;
   margin-top: 0;
   text-align: center;
@@ -448,17 +512,17 @@ label {
 
 .contact__me-btn {
   padding: 25px 35px;
-  border: 2px solid #fff;
-  background-color: #000;
+  border: 2px solid var(--fourth-color);
+  background-color: var(--secondary-color);
   transition: 0.5s ease;
-  color: white;
+  color: var(--fourth-color);
   margin-bottom: 50px;
   width: 150px;
 }
 
 .contact__me-btn:hover {
-  background-color: white;
-  color: black;
+  background-color: var(--fourth-color);
+  color: var(--secondary-color);
 }
 
 .input-group {
@@ -469,7 +533,7 @@ label {
   font-weight: 700;
   font-size: 22px;
   margin: 10px 0;
-  color: #575454;
+  color: var(--ninths-color);
 }
 
 .input-group input,
@@ -479,9 +543,9 @@ label {
   border: 0;
   outline: 0;
   padding: 20px;
-  color: #333;
+  color: var(--ninths-color);
   font-size: 16px;
-  background-color: rgb(243, 237, 237);
+  background-color: var(--eigths-color);
   width: 760px;
 }
 ::placeholder {
@@ -505,10 +569,10 @@ form button {
   margin: 10px;
   align-items: flex-end;
   border: 0;
-  background-color: rgb(166, 77, 244);
+  background-color: var(--third-color);
   padding: 15px 40px;
   border-radius: 5px;
-  color: #fff;
+  color: var(--fourth-color);
   font-weight: 700;
   font-size: 22px;
   transition: all 0.5s;
@@ -516,8 +580,8 @@ form button {
 }
 
 form button:hover {
-  color: rgb(166, 77, 244);
-  background-color: #fff;
+  color: var(--third-color);
+  background-color: var(--fourth-color);
 }
 
 .input-group span {
@@ -537,8 +601,8 @@ form button:hover {
 }
 
 .footer {
-  background-color: #000;
-  color: #fff;
+  background-color: var(--ten-color);
+  color: var(--eleven-color);
 }
 
 .footer__top {
@@ -546,7 +610,7 @@ form button:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid var(--fifth-color);
   padding-bottom: 70px;
 }
 
@@ -781,6 +845,10 @@ form button:hover {
   .contact__text {
     font-size: 10px;
   }
+  .header__links {
+    gap: 15px;
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 380px) {
@@ -827,7 +895,7 @@ form button:hover {
 @media (max-width: 321px) {
   .header__links {
     gap: 10px;
-    font-size: 16px;
+    font-size: 12px;
   }
   .header__title {
     font-size: 35px;
@@ -838,6 +906,9 @@ form button:hover {
 }
 
 @media (max-width: 151px) {
+  .header__top{
+    text-align: center;
+  }
   .header__links {
     flex-wrap: wrap;
   }

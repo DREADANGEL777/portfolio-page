@@ -21,3 +21,30 @@ function scrollToBlock(event) {
     block: "start",
   })
 }
+
+var icon = document.getElementById("icon")
+var headerBG = document.getElementById("header__main")
+var contact = document.getElementById("contact")
+
+icon.onclick = function () {
+  document.body.classList.toggle("dark-theme")
+  if (headerBG.classList.contains("white__theme-bg")) {
+    headerBG.classList.add("dark__theme-bg")
+    headerBG.classList.remove("white__theme-bg")
+  } else {
+    headerBG.classList.remove("dark__theme-bg")
+    headerBG.classList.add("white__theme-bg")
+  }
+  if (contact.classList.contains("white__theme-bg-2")) {
+    contact.classList.add("dark__theme-bg-2")
+    contact.classList.remove("white__theme-bg-2")
+  } else {
+    contact.classList.remove("dark__theme-bg-2")
+    contact.classList.add("white__theme-bg-2")
+  }
+  if (document.body.classList.contains("dark-theme")) {
+    icon.src = "images/sun.png"
+  } else {
+    icon.src = "images/moon.png"
+  }
+}
