@@ -20,19 +20,23 @@
       <div>
         <ul class="header__links">
           <li class="header__link">
-            <a href="#header__main" class="header__link-a" onclick="scrollToBlock(event)">HOME</a>
+            <a href="#header__main" class="header__link-a header__link-a-1" onclick="scrollToBlock(event)">HOME</a>
           </li>
           <li class="header__link">
-            <a href="#about" class="header__link-a" onclick="scrollToBlock(event)">ABOUT</a>
+            <a href="#about" class="header__link-a header__link-a-2" onclick="scrollToBlock(event)">ABOUT</a>
           </li>
           <li class="header__link">
-            <a href="#projects" class="header__link-a" onclick="scrollToBlock(event)">PROJECTS</a>
+            <a href="#projects" class="header__link-a header__link-a-3" onclick="scrollToBlock(event)">PROJECTS</a>
           </li>
           <li class="header__link">
-            <a href="#contact" class="header__link-a" onclick="scrollToBlock(event)">CONTACT</a>
+            <a href="#contact" class="header__link-a header__link-a-4" onclick="scrollToBlock(event)">CONTACT</a>
           </li>
           <li class="header__link">
             <img src="images/moon.png" id="icon" />
+          </li>
+          <li class="header__link header__link-language-cont">
+            <a href="#" language="english" class="header__link-language active">EN</a>
+            <a href="#" language="ukraine" class="header__link-language">UA</a>
           </li>
         </ul>
       </div>
@@ -58,11 +62,11 @@
       <div class="header__description">
         <h1 class="header__title">HEY, I'M InVeStOr</h1>
         <p class="header__text">
-          A Result-Oriented Web Developer building and managing Websites and Web <br />
-          Applications that leads to the success of the overall product
+          <span class="header__text-1"> A Result-Oriented Web Developer building and managing Websites and Web</span> <br />
+          <span class="header__text-2">Applications that leads to the success of the overall product</span>
         </p>
         <button class="header__btn">
-          <a href="#projects" onclick="scrollToBlock(event)">PROJECTS</a>
+          <a href="#projects" class="header__btn-a" onclick="scrollToBlock(event)">PROJECTS</a>
         </button>
       </div>
     </div>
@@ -72,34 +76,36 @@
           <div class="about__top">
             <h2 class="about__title">ABOUT ME</h2>
             <p class="about__text">
-              Here you will find more information about me, what I do, and my current skills mostly
-              in terms <br />
-              of programming and technology
+              <span class="about__text-1">Here you will find more information about me, what I do, and my current skills mostly
+              in terms</span> <br />
+              <span class="about__text-2">of programming and technology</span>
             </p>
           </div>
           <div class="about__main">
             <div class="about__description">
               <h2 class="description__title">Get to know me!</h2>
               <div class="description__text">
-                <p>
+                <p  class="description__text-1">
                   I'm a <span>Frontend Focused Web Developer</span> building and managing the
                   Front-end of Websites and Web Applications that leads to the success of the
                   overall product. Check out some of my work in the <span>Projects</span> section.
                 </p>
                 <br />
-                <p>
+                <p  class="description__text-2">
                   I also like sharing content related to the stuff that I have learned over the
                   years in <span>Web Development</span> so it can help other people of the Dev
                   Community. Feel free to Connect or Follow me on my Linkedin and Instagram where I
                   post useful content related to Web Development and Programming.
                 </p>
                 <br />
-                I'm open to <span>Job</span> opportunities where I can contribute, learn and grow.
+                <p  class="description__text-3">
+                  I'm open to <span>Job</span> opportunities where I can contribute, learn and grow.
                 If you have a good opportunity that matches my skills and experience then don't
                 hesitate to <span>contact</span> me.
+                </p>
               </div>
               <button class="description__btn">
-                <a href="#contact" onclick="scrollToBlock(event)">CONTACT</a>
+                <a href="#contact"  class="description__btn-a" onclick="scrollToBlock(event)">CONTACT</a>
               </button>
             </div>
             <div class="about__skills">
@@ -132,68 +138,72 @@
         <div class="projects__inner">
           <h2 class="projects__title">Projects</h2>
           <p class="projects__text">
-            Here you will find some of the personal and clients projects that I created with each
-            project <br />
-            containing its own case study
+            <span class="projects__text-1">Here you will find some of the personal and clients projects that I created with each
+            project</span> <br />
+          <span class="projects__text-2">  containing its own case study</span>
           </p>
           <div class="projects__cont projects__cont-1">
             <div class="project-item">
               <img src="images/header-bg-1.jpg" class="project__item-img" />
-              <h2 class="project__item-title">Bootslander landing page</h2>
-              <p class="project__item-text">
+              <h2 class="project__item-title project__item-title-1">Bootslander landing page</h2>
+              <p class="project__item-text  project__item-text-1">
                 This site is a modern landing page for promoting services. It uses dark and light
                 colors with accents of green buttons. The navigation menu contains links to sections
                 and a drop-down list.
               </p>
-              <button class="project__item-btn">See a project</button>
+              <button class="project__item-btn project__item-btn-1">See a project</button>
             </div>
             <div class="project-item">
               <img src="images/header-bg-2.jpg" class="project__item-img" />
-              <h2 class="project__item-title">Shop landing page</h2>
-              <p class="project__item-text">
+              <h2 class="project__item-title project__item-title-2">Shop landing page</h2>
+              <p class="project__item-text  project__item-text-2">
                 This site is also a landing page for various products and services. It has a modern
                 design with clean blocks and bright colors. Each page shows a unique style according
                 to the brand.
               </p>
-              <button class="project__item-btn">See a project</button>
+              <button class="project__item-btn project__item-btn-2">See a project</button>
             </div>
             <div class="project-item">
               <img src="images/header-bg-3.jpg" class="project__item-img" />
-              <h2 class="project__item-title">HEIGHTS landing page</h2>
-              <p class="project__item-text">
+              <h2 class="project__item-title  project__item-title-3">HEIGHTS landing page</h2>
+              <p class="project__item-text  project__item-text-3">
                 This site is also a landing page aimed at promoting the training course. It has a
                 minimalist design with soft colors and attractive images. The main focus is on the
                 text and call-to-action button.
               </p>
-              <button class="project__item-btn">See a project</button>
+              <button class="project__item-btn  project__item-btn-3">See a project</button>
             </div>
           </div>
           <div class="projects__cont projects__cont-2" id="projects__cont-2">
             <div class="project-item">
               <img src="images/header-bg-1.jpg" class="project__item-img" />
-              <h2 class="project__item-title">Bootslander landing page</h2>
-              <p class="project__item-text">
+              <h2 class="project__item-title project__item-title-4">Bootslander landing page</h2>
+              <p class="project__item-text  project__item-text-4">
                 This site is a modern landing page for promoting services. It uses dark and light
                 colors with accents of green buttons. The navigation menu contains links to sections
                 and a drop-down list.
               </p>
-              <button class="project__item-btn">See a project</button>
+              <button class="project__item-btn project__item-btn-4">See a project</button>
             </div>
             <div class="project-item">
               <img src="images/header-bg-2.jpg" class="project__item-img" />
-              <h2 class="project__item-title">Shop landing page</h2>
-              <p class="project__item-text">lol</p>
-              <button class="project__item-btn">See a project</button>
+              <h2 class="project__item-title project__item-title-5">Shop landing page</h2>
+              <p class="project__item-text  project__item-text-5">
+                This site is also a landing page for various products and services. It has a modern
+                design with clean blocks and bright colors. Each page shows a unique style according
+                to the brand.
+              </p>
+              <button class="project__item-btn project__item-btn-5">See a project</button>
             </div>
             <div class="project-item">
               <img src="images/header-bg-3.jpg" class="project__item-img" />
-              <h2 class="project__item-title">HEIGHTS landing page</h2>
-              <p class="project__item-text">
+              <h2 class="project__item-title  project__item-title-6">HEIGHTS landing page</h2>
+              <p class="project__item-text  project__item-text-6">
                 This site is also a landing page aimed at promoting the training course. It has a
                 minimalist design with soft colors and attractive images. The main focus is on the
                 text and call-to-action button.
               </p>
-              <button class="project__item-btn">See a project</button>
+              <button class="project__item-btn  project__item-btn-6">See a project</button>
             </div>
           </div>
           <button class="under__projects-btn" id="under__projects-btn" onclick="addProjects()">
@@ -207,51 +217,37 @@
         <div class="contact__inner">
           <h2 class="contact__title">CONTACT</h2>
           <p class="contact__text">
-            Feel free to Contact me by submitting the form below and I will get back to you as soon
-            as <br />
-            possible
+            <span class="contact__text-1">Feel free to Contact me by submitting the form below and I will get back to you as soon
+            as</span> <br />
+            <span class="contact__text-2">possible</span>
           </p>
           <div class="form__cont" id="form__cont">
             <div class="form__inner">
-              <form>
+              <form name="submit-to-google-sheet">
                 <div class="input-group">
-                  <label>Name</label>
-                  <input
-                    type="text"
-                    placeholder="Enter your name"
-                    id="contact-name"
-                    onkeyup="validateName()"
-                  />
-                  <span id="name-error"></span>
+                  <label class="input-group-name">Name</label>
+                  <input type="text" name="Name" placeholder="Your name"  id="contact-name" required/>
                 </div>
 
                 <div class="input-group">
-                  <label>Email</label>
-                  <input
-                    type="email"
-                    placeholder="Enter your email"
-                    id="contact-email"
-                    onkeyup="validateEmail()"
-                  />
-                  <span id="email-error"></span>
+                  <label class="input-group-email">Email</label>
+                  <input type="email" name="Email" placeholder="Your email"  id="contact-email" required/>
                 </div>
 
                 <div class="input-group">
-                  <label>Message</label>
-                  <textarea
-                    rows="5"
-                    placeholder="Enter your message"
-                    id="contact-message"
-                    onkeyup="validateMessage()"
-                  ></textarea>
+                  <label  class="input-group-message">Message</label>
+                  <input
+                    type="text" name="Message" placeholder="Your message" 
+                    id="contact-message" required
+                  ></input>
 
                   <span id="message-error"></span>
                 </div>
 
                 <div class="btn-cont">
-                  <button onclick="return validateForm()">Submit</button>
+                  <button type="submit" class="contact__btn">Submit</button>
                 </div>
-                <span id="submit-error"></span>
+                 <span id="msg"></span>
               </form>
             </div>
           </div>
@@ -264,8 +260,8 @@
           <div class="footer__text-cont">
             <h2 class="footer__title">DEMIAN INVESTOR</h2>
             <p class="footer__text">
-              A Frontend focused Web Developer building the Frontend of Websites and <br />
-              Web Applications that leads to the success of the overall product
+              <span class="footer__text-1">A Frontend focused Web Developer building the Frontend of Websites and</span> <br />
+              <span class="footer__text-2">Web Applications that leads to the success of the overall product</span>
             </p>
           </div>
           <div class="footer__social">

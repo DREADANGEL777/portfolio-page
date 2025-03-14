@@ -41,6 +41,10 @@ label {
   display: block;
 }
 
+.active{
+  background-color: #ff6201;
+}
+
 .dark-theme {
   --primary-color: #524d4d6e;
   --secondary-color: #ffffff;
@@ -73,7 +77,10 @@ label {
 
 #icon {
   width: 20px;
+  height: 20px;
   cursor: pointer;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
@@ -108,10 +115,12 @@ label {
 
 .header__links {
   display: flex;
+  align-items: center;
   gap: 40px;
 }
 
 .header__link {
+  display: flex;
 }
 
 .header__link-a {
@@ -121,6 +130,17 @@ label {
 
 .header__link-a:hover {
   color: var(--third-color);
+}
+
+.header__link-language {
+  color: var(--secondary-color);
+  padding: 5px;
+  background-color: var(--third-color);
+  margin-left: 5px;
+}
+
+.active {
+  background-color: #ff6201;
 }
 
 .dark__theme-bg {
@@ -388,6 +408,7 @@ label {
   font-size: 22px;
   transition: all 0.5s;
   box-shadow: 0 5px 5px rgba(182, 182, 182, 0.75);
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
 }
 
 .project__item-btn:hover {
@@ -407,6 +428,7 @@ label {
   font-size: 22px;
   transition: all 0.5s;
   box-shadow: 0 5px 5px rgba(182, 182, 182, 0.75);
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
 }
 
 .under__projects-btn:hover {
@@ -577,6 +599,7 @@ form button {
   font-size: 22px;
   transition: all 0.5s;
   box-shadow: 0 5px 5px rgba(182, 182, 182, 0.75);
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
 }
 
 form button:hover {
@@ -682,6 +705,9 @@ form button:hover {
 }
 
 @media (max-width: 888px) {
+  .header__links {
+    gap: 10px;
+  }
   .about__main {
     display: block;
   }
@@ -751,7 +777,7 @@ form button:hover {
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 740px) {
   .header__logo {
     display: none;
   }
@@ -760,6 +786,9 @@ form button:hover {
     align-items: center;
     justify-content: center;
   }
+}
+
+@media (max-width: 700px) {
   .header__title {
     font-size: 60px;
   }
@@ -799,6 +828,10 @@ form button:hover {
   .contact__text {
     font-size: 10px;
   }
+  .header__links{
+    font-size: 15px;
+    gap: 20px;
+  }
 }
 
 @media (max-width: 560px) {
@@ -809,7 +842,7 @@ form button:hover {
 
 @media (max-width: 510px) {
   .header__links {
-    gap: 20px;
+    gap: 10px;
   }
   .header__title {
     font-size: 45px;
@@ -846,8 +879,12 @@ form button:hover {
     font-size: 10px;
   }
   .header__links {
-    gap: 15px;
-    font-size: 14px;
+    gap: 10px;
+    font-size: 10px;
+  }
+  #icon {
+    width: 15px;
+    height: 15px;
   }
 }
 
@@ -895,7 +932,15 @@ form button:hover {
 @media (max-width: 321px) {
   .header__links {
     gap: 10px;
-    font-size: 12px;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .header__link-language {
+    font-size: 10px;
+    padding: 2px;
+    margin: 1px;
   }
   .header__title {
     font-size: 35px;
@@ -906,9 +951,6 @@ form button:hover {
 }
 
 @media (max-width: 151px) {
-  .header__top{
-    text-align: center;
-  }
   .header__links {
     flex-wrap: wrap;
   }
@@ -981,6 +1023,9 @@ form button:hover {
   }
   .contact__title {
     font-size: 20px;
+  }
+  .input-group label {
+    font-size: 13px;
   }
   .contact__text {
     font-size: 10px;
