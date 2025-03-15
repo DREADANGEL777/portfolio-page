@@ -1,16 +1,3 @@
-const projects2 = document.getElementById("projects__cont-2")
-const underProjectsBtn = document.getElementById("under__projects-btn")
-
-function addProjects() {
-  projects2.classList.toggle("projects__cont-2-active")
-
-  if (projects2.classList.contains("projects__cont-2-active")) {
-    underProjectsBtn.innerHTML = "SEE LESS PROJECTS"
-  } else {
-    underProjectsBtn.innerHTML = "SEE MORE PROJECTS"
-  }
-}
-
 function scrollToBlock(event) {
   event.preventDefault()
   const targetId = event.target.getAttribute("href").substring(1)
@@ -67,7 +54,6 @@ form.addEventListener("submit", (e) => {
     .catch((error) => console.error("Error!", error.message))
 })
 
-const links = document.querySelectorAll(".header__link-language")
 const headerLOGO = document.querySelector(".header__logo-title")
 const headerLINK1 = document.querySelector(".header__link-a-1")
 const headerLINK2 = document.querySelector(".header__link-a-2")
@@ -181,6 +167,8 @@ var data = {
     footerText1: "SOCIAL",
     footerText2: "A Frontend focused Web Developer building the Frontend of Websites and",
     footerSocialTitle: "Web Applications that leads to the success of the overall product",
+    underProjectsBtnMore: "SEE MORE PROJECTS",
+    underProjectsBtnLess: "SEE LESS PROJECTS",
   },
   ukraine: {
     headerLogo: "InVeStOr.",
@@ -244,8 +232,44 @@ var data = {
     footerText1: "Веб-розробник, зосереджений на інтерфейсі, створює інтерфейс веб-сайтів і",
     footerText2: "Веб-додатків, які забезпечують успіх продукту в цілому",
     footerSocialTitle: "СОЦІАЛЬНІ МЕРЕЖІ",
+    underProjectsBtnMore: "ДИВИТИСЬ БІЛЬШЕ",
+    underProjectsBtnLess: "ДИВИТИСЬ МЕНШЕ",
   },
 }
+
+const projects2 = document.getElementById("projects__cont-2")
+const underProjectsBtn = document.getElementById("under__projects-btn")
+const links = document.querySelectorAll(".header__link-language")
+
+function addProjects() {
+  const links2 = Array.from(links)
+
+  const activeLink = links2.find((item) => Array.from(item.classList).includes("active"))
+  console.log(activeLink.getAttribute("language"))
+
+  projects2.classList.toggle("projects__cont-2-active")
+
+  if (projects2.classList.contains("projects__cont-2-active")) {
+    underProjectsBtn.innerHTML =
+      activeLink.getAttribute("language") === "ukraine" ? "ДИВИТИСЬ МЕНШЕ" : "SEE LESS PROJECTS"
+  } else {
+    underProjectsBtn.innerHTML =
+      activeLink.getAttribute("language") === "ukraine" ? "ДИВИТИСЬ БІЛЬШЕ" : "SEE MORE PROJECTS"
+  }
+}
+
+// function changeLanguage() {
+//   const links2 = Array.from(links)
+//   const activeLink = links2.find((item) => Array.from(item.classList).includes("active"))
+
+//   if (projects2.classList.contains("projects__cont-2-active")) {
+//     underProjectsBtn.innerHTML =
+//       activeLink.getAttribute("language") === "ukraine" ? "ДИВИТИСЬ МЕНШЕ" : "SEE LESS PROJECTS"
+//   } else {
+//     underProjectsBtn.innerHTML =
+//       activeLink.getAttribute("language") === "ukraine" ? "ДИВИТИСЬ БІЛЬШЕ" : "SEE MORE PROJECTS"
+//   }
+// }
 
 const langEl = document.querySelector(".header__link-language-cont")
 
@@ -256,6 +280,11 @@ links.forEach((el) => {
     const attr = el.getAttribute("language")
     console.log("123", attr)
 
+    console.log(projects2)
+
+    underProjectsBtn.innerHTML = projects2.classList.contains("projects__cont-2-active")
+      ? data[attr].underProjectsBtnLess
+      : data[attr].underProjectsBtnMore
     headerLOGO.textContent = data[attr].headerLogo
     headerLINK1.textContent = data[attr].headerLink1
     headerLINK2.textContent = data[attr].headerLINK2
