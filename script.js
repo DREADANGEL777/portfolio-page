@@ -169,6 +169,9 @@ var data = {
     footerSocialTitle: "Web Applications that leads to the success of the overall product",
     underProjectsBtnMore: "SEE MORE PROJECTS",
     underProjectsBtnLess: "SEE LESS PROJECTS",
+    inputNamePlaceholder: "Your name",
+    inputNamePlaceholder: "Your email",
+    inputNamePlaceholder: "Your message",
   },
   ukraine: {
     headerLogo: "InVeStOr.",
@@ -234,6 +237,9 @@ var data = {
     footerSocialTitle: "СОЦІАЛЬНІ МЕРЕЖІ",
     underProjectsBtnMore: "ДИВИТИСЬ БІЛЬШЕ",
     underProjectsBtnLess: "ДИВИТИСЬ МЕНШЕ",
+    inputNamePlaceholder: "Ваше і'мя",
+    inputEmailPlaceholder: "Ваша пошта",
+    inputMessagePlaceholder: "Ваше повідомлення",
   },
 }
 
@@ -272,16 +278,20 @@ function addProjects() {
 // }
 
 const langEl = document.querySelector(".header__link-language-cont")
+const inputNamePlaceholder = document.getElementById("contact-name")
+const inputEmailPlaceholder = document.getElementById("contact-email")
+const inputMessagePlaceholder = document.getElementById("contact-message")
+
 
 links.forEach((el) => {
   el.addEventListener("click", () => {
     langEl.querySelector(".active").classList.remove("active")
     el.classList.add("active")
     const attr = el.getAttribute("language")
-    console.log("123", attr)
 
-    console.log(projects2)
-
+    inputNamePlaceholder.placeholder = data[attr].inputNamePlaceholder
+    inputEmailPlaceholder.placeholder = data[attr].inputEmailPlaceholder
+    inputMessagePlaceholder.placeholder = data[attr].inputMessagePlaceholder
     underProjectsBtn.innerHTML = projects2.classList.contains("projects__cont-2-active")
       ? data[attr].underProjectsBtnLess
       : data[attr].underProjectsBtnMore
