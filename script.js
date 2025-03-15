@@ -93,20 +93,20 @@ const projectsItemTitle1 = document.querySelector(".project__item-title-1")
 const projectsItemTitle2 = document.querySelector(".project__item-title-2")
 const projectsItemTitle3 = document.querySelector(".project__item-title-3")
 const projectsItemTitle4 = document.querySelector(".project__item-title-4")
-const projectsItemTitle5 = document.querySelector(".project__item-title-5")
-const projectsItemTitle6 = document.querySelector(".project__item-title-6")
+// const projectsItemTitle5 = document.querySelector(".project__item-title-5")
+// const projectsItemTitle6 = document.querySelector(".project__item-title-6")
 const projectsItemText1 = document.querySelector(".project__item-text-1")
 const projectsItemText2 = document.querySelector(".project__item-text-2")
 const projectsItemText3 = document.querySelector(".project__item-text-3")
 const projectsItemText4 = document.querySelector(".project__item-text-4")
-const projectsItemText5 = document.querySelector(".project__item-text-5")
-const projectsItemText6 = document.querySelector(".project__item-text-6")
+// const projectsItemText5 = document.querySelector(".project__item-text-5")
+// const projectsItemText6 = document.querySelector(".project__item-text-6")
 const projectsItemBtn1 = document.querySelector(".project__item-btn-1")
 const projectsItemBtn2 = document.querySelector(".project__item-btn-2")
 const projectsItemBtn3 = document.querySelector(".project__item-btn-3")
 const projectsItemBtn4 = document.querySelector(".project__item-btn-4")
-const projectsItemBtn5 = document.querySelector(".project__item-btn-5")
-const projectsItemBtn6 = document.querySelector(".project__item-btn-6")
+// const projectsItemBtn5 = document.querySelector(".project__item-btn-5")
+// const projectsItemBtn6 = document.querySelector(".project__item-btn-6")
 const contactTitle = document.querySelector(".contact__title")
 const contactText1 = document.querySelector(".contact__text-1")
 const contactText2 = document.querySelector(".contact__text-2")
@@ -146,30 +146,30 @@ var data = {
     projectsText1:
       "Here you will find some of the personal and clients projects that I created with each project",
     projectsText2: "containing its own case study",
-    projectsItemTitle1: "Bootslander landing page",
-    projectsItemTitle2: "Shop landing page",
-    projectsItemTitle3: "HEIGHTS landing page",
-    projectsItemTitle4: "Bootslander landing page",
-    projectsItemTitle5: "Shop landing page",
-    projectsItemTitle6: "HEIGHTS landing page",
+    projectsItemTitle1: "Surfing School page",
+    projectsItemTitle2: "Shop Dior page",
+    projectsItemTitle3: "URUS for rent page",
+    projectsItemTitle4: "Sandbox landing page",
+    // projectsItemTitle5: "Shop landing page",
+    // projectsItemTitle6: "HEIGHTS landing page",
     projectsItemText1:
-      "This site is a modern landing page for promoting services. It uses dark and light colors with accents of green buttons. The navigation menu contains links to sections and a drop-down list.",
+      "This is a landing page for a surfing school. It has a modern design with ocean-themed visuals. The page provides course details and a contact section.",
     projectsItemText2:
-      "This site is also a landing page for various products and services. It has a modern design with clean blocks and bright colors. Each page shows a unique style according to the brand.",
+      "This is a stylish Dior-themed page. It showcases elegant design with luxury aesthetics. The layout highlights fashion and beauty elements.",
     projectsItemText3:
-      "This site is also a landing page aimed at promoting the training course. It has a minimalist design with soft colors and attractive images. The main focus is on the text and call-to-action button.",
+      "This page is dedicated to the Lamborghini Urus. It features a sleek design with high-quality car images. The layout emphasizes speed, luxury, and performance.",
     projectsItemText4:
-      "This site is a modern landing page for promoting services. It uses dark and light colors with accents of green buttons. The navigation menu contains links to sections and a drop-down list.",
-    projectsItemText5:
-      "This site is also a landing page for various products and services. It has a modern design with clean blocks and bright colors. Each page shows a unique style according to the brand.",
-    projectsItemText6:
-      "This site is also a landing page aimed at promoting the training course. It has a minimalist design with soft colors and attractive images. The main focus is on the text and call-to-action button.",
+      "This is a simple sandbox page. It features interactive elements for testing. The design is minimalistic and clean.",
+    // projectsItemText5:
+    //   "This site is also a landing page for various products and services. It has a modern design with clean blocks and bright colors. Each page shows a unique style according to the brand.",
+    // projectsItemText6:
+    //   "This site is also a landing page aimed at promoting the training course. It has a minimalist design with soft colors and attractive images. The main focus is on the text and call-to-action button.",
     projectsItemBtn1: "See a project",
     projectsItemBtn2: "See a project",
     projectsItemBtn3: "See a project",
     projectsItemBtn4: "See a project",
-    projectsItemBtn5: "See a project",
-    projectsItemBtn6: "See a project",
+    // projectsItemBtn5: "See a project",
+    // projectsItemBtn6: "See a project",
     contactTitle: "CONTACT",
     contactText1:
       "Feel free to Contact me by submitting the form below and I will get back to you as soon as",
@@ -209,30 +209,30 @@ var data = {
     projectsText1:
       "Тут ви знайдете деякі з особистих проектів і проектів клієнтів, які я створив з кожним проектом",
     projectsText2: "містить власне тематичне дослідження",
-    projectsItemTitle1: "Bootslander лендинг",
-    projectsItemTitle2: "Інтернет магазин",
-    projectsItemTitle3: "HEIGHTS лендинг",
-    projectsItemTitle4: "Bootslander лендинг",
-    projectsItemTitle5: "Інтернет магазин",
-    projectsItemTitle6: "HEIGHTS лендинг",
+    projectsItemTitle1: "Сторінка школи серфінгу",
+    projectsItemTitle2: "Сторінка магазину Dior",
+    projectsItemTitle3: "URUS в оренду",
+    projectsItemTitle4: "SANDBOX лендинг",
+    // projectsItemTitle5: "Інтернет магазин",
+    // projectsItemTitle6: "HEIGHTS лендинг",
     projectsItemText1:
-      "Цей сайт є сучасною посадковою сторінкою для просування послуг. Використовуються темні та світлі кольори з акцентами зелених гудзиків. Навігаційне меню містить посилання на розділи та розкривний список.",
+      "Це лендинг сторінка школи серфінгу. Він має сучасний дизайн із зображеннями на тему океану. На сторінці є деталі курсу та розділ контактів.",
     projectsItemText2:
-      "Цей сайт також є цільовою сторінкою для різних продуктів і послуг. Він має сучасний дизайн із чистими блоками та яскравими кольорами. Кожна сторінка демонструє унікальний стиль відповідно до бренду.",
+      "Це стильна сторінка на тему Dior. Він демонструє елегантний дизайн із розкішною естетикою. Макет підкреслює елементи моди та краси.",
     projectsItemText3:
-      "Цей сайт також є цільовою сторінкою, спрямованою на просування навчального курсу. Він має мінімалістичний дизайн з м'якими кольорами та привабливими зображеннями. Основна увага приділяється тексту та кнопці заклику до дії.",
+      "Ця сторінка присвячена Lamborghini Urus. Він має елегантний дизайн із високоякісними зображеннями автомобілів. Компонування підкреслює швидкість, розкіш і продуктивність.",
     projectsItemText4:
-      "Цей сайт є сучасною посадковою сторінкою для просування послуг. Використовуються темні та світлі кольори з акцентами зелених гудзиків. Навігаційне меню містить посилання на розділи та розкривний список.",
-    projectsItemText5:
-      "Цей сайт також є цільовою сторінкою для різних продуктів і послуг. Він має сучасний дизайн із чистими блоками та яскравими кольорами. Кожна сторінка демонструє унікальний стиль відповідно до бренду.",
-    projectsItemText6:
-      "Цей сайт також є цільовою сторінкою, спрямованою на просування навчального курсу. Він має мінімалістичний дизайн з м'якими кольорами та привабливими зображеннями. Основна увага приділяється тексту та кнопці заклику до дії.",
+      "Це проста сторінка SANDBOX. Він містить інтерактивні елементи для тестування. Дизайн мінімалістичний і чистий.",
+    // projectsItemText5:
+    //   "Цей сайт також є цільовою сторінкою для різних продуктів і послуг. Він має сучасний дизайн із чистими блоками та яскравими кольорами. Кожна сторінка демонструє унікальний стиль відповідно до бренду.",
+    // projectsItemText6:
+    //   "Цей сайт також є цільовою сторінкою, спрямованою на просування навчального курсу. Він має мінімалістичний дизайн з м'якими кольорами та привабливими зображеннями. Основна увага приділяється тексту та кнопці заклику до дії.",
     projectsItemBtn1: "Дивитись проект",
     projectsItemBtn2: "Дивитись проект",
     projectsItemBtn3: "Дивитись проект",
     projectsItemBtn4: "Дивитись проект",
-    projectsItemBtn5: "Дивитись проект",
-    projectsItemBtn6: "Дивитись проект",
+    // projectsItemBtn5: "Дивитись проект",
+    // projectsItemBtn6: "Дивитись проект",
     contactTitle: "КОНТАКТ",
     contactText1:
       "Не соромтеся зв’язатися зі мною, заповнивши форму нижче, і я якнайшвидше зв’яжуся з вами.",
@@ -281,20 +281,20 @@ links.forEach((el) => {
     projectsItemTitle2.textContent = data[attr].projectsItemTitle2
     projectsItemTitle3.textContent = data[attr].projectsItemTitle3
     projectsItemTitle4.textContent = data[attr].projectsItemTitle4
-    projectsItemTitle5.textContent = data[attr].projectsItemTitle5
-    projectsItemTitle6.textContent = data[attr].projectsItemTitle6
+    // projectsItemTitle5.textContent = data[attr].projectsItemTitle5
+    // projectsItemTitle6.textContent = data[attr].projectsItemTitle6
     projectsItemText1.textContent = data[attr].projectsItemText1
     projectsItemText2.textContent = data[attr].projectsItemText2
     projectsItemText3.textContent = data[attr].projectsItemText3
     projectsItemText4.textContent = data[attr].projectsItemText4
-    projectsItemText5.textContent = data[attr].projectsItemText5
-    projectsItemText6.textContent = data[attr].projectsItemText6
+    // projectsItemText5.textContent = data[attr].projectsItemText5
+    // projectsItemText6.textContent = data[attr].projectsItemText6
     projectsItemBtn1.textContent = data[attr].projectsItemBtn1
     projectsItemBtn2.textContent = data[attr].projectsItemBtn2
     projectsItemBtn3.textContent = data[attr].projectsItemBtn3
     projectsItemBtn4.textContent = data[attr].projectsItemBtn4
-    projectsItemBtn5.textContent = data[attr].projectsItemBtn5
-    projectsItemBtn6.textContent = data[attr].projectsItemBtn6
+    // projectsItemBtn5.textContent = data[attr].projectsItemBtn5
+    // projectsItemBtn6.textContent = data[attr].projectsItemBtn6
     contactTitle.textContent = data[attr].contactTitle
     contactText1.textContent = data[attr].contactText1
     contactText2.textContent = data[attr].contactText2
