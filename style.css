@@ -41,7 +41,7 @@ label {
   display: block;
 }
 
-.active{
+.active {
   background-color: var(--third-color);
 }
 
@@ -133,16 +133,17 @@ label {
 }
 
 .header__link-language {
-  color: var(--secondary-color);
   padding: 5px;
-  background-color: var(--third-color);
   margin-left: 5px;
-}
-
-.active {
   color: #000;
   background-color: #fff;
   border: 2px solid #000;
+}
+
+.active {
+  border: none;
+  color: var(--secondary-color);
+  background-color: var(--third-color);
 }
 
 .dark__theme-bg {
@@ -830,7 +831,7 @@ form button:hover {
   .contact__text {
     font-size: 10px;
   }
-  .header__links{
+  .header__links {
     font-size: 15px;
     gap: 20px;
   }
