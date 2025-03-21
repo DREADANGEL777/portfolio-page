@@ -123,7 +123,7 @@ var data = {
     descriptionText1:
       " I'm a <span>Frontend Focused Web Developer</span> building and managing the Front-end of Websites and Web Applications that leads to the success of the overall product. Check out some of my work in the <span>Projects</span> section.",
     descriptionText2:
-      "I also like sharing content related to the stuff that I have learned over the years in <span>Web Development</span> so it can help other people of the Dev Community. Feel free to Connect or Follow me on my Linkedin and Instagram where I post useful content related to Web Development and Programming.",
+      "I also like sharing content related to the stuff that I have learned over the years in <span>Web Development</span> so it can help other people of the Dev Community. ", //Feel free to Connect or Follow me on my Linkedin and Instagram where I post useful content related to Web Development and Programming.
     descriptionText3:
       "I'm open to <span>Job</span> opportunities where I can contribute, learn and grow. If you have a good opportunity that matches my skills and experience then don't hesitate to <span>contact</span> me.",
     descriptionBtn: "CONTACT ME",
@@ -191,15 +191,15 @@ var data = {
     descriptionText1:
       "Я веб-розробник, <span>орієнтований на зовнішній інтерфейс</span>, створюю і керую зовнішнім інтерфейсом веб-сайтів і веб-додатків, що сприяє успіху продукту в цілому. Перегляньте деякі з моїх робіт у розділі <span> Проекти</span>.",
     descriptionText2:
-      "Мені також подобається ділитися вмістом, пов’язаним із матеріалами, які я навчився протягом багатьох років у <span> веб-розробці</span>, щоб це могло допомогти іншим людям із спільноти розробників. Не соромтеся підключатися або слідкувати за мною в моїх Linkedin та Instagram, де я публікую корисний вміст, пов’язаний із веб-розробкою та програмуванням.",
+      "Мені також подобається ділитися вмістом, пов’язаним із матеріалами, які я навчився протягом багатьох років у <span> веб-розробці</span>, щоб це могло допомогти іншим людям із спільноти розробників.", // Не соромтеся підключатися або слідкувати за мною в моїх Linkedin та Instagram, де я публікую корисний вміст, пов’язаний із веб-розробкою та програмуванням.
     descriptionText3:
       "Я відкритий для можливостей <span>  роботи</span>, де я можу робити внесок, вчитися та розвиватися. Якщо у вас є хороша можливість, яка відповідає моїм навичкам і досвіду, тоді не соромтеся <span>звертатися</span> до мене.",
     descriptionBtn: "ЗВ'ЯЖІТЬСЯ ЗІ МНОЮ",
     skillsTitle: "Мої Навички",
     projectsTitle: "Проекти",
     projectsText1:
-      "Тут ви знайдете деякі з особистих проектів і проектів клієнтів, які я створив з кожним проектом",
-    projectsText2: "містить власне тематичне дослідження",
+      "Тут ви знайдете деякі з особистих проектів і проектів клієнтів, які я створив. Кожен проект",
+    projectsText2: "містить власний дизайн",
     projectsItemTitle1: "Сторінка школи серфінгу",
     projectsItemTitle2: "Сторінка магазину Dior",
     projectsItemTitle3: "URUS в оренду",
