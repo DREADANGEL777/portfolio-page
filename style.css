@@ -42,7 +42,7 @@ label {
 }
 
 .active{
-  background-color: #ff6201;
+  background-color: var(--third-color);
 }
 
 .dark-theme {
@@ -140,7 +140,9 @@ label {
 }
 
 .active {
-  background-color: #ff6201;
+  color: #000;
+  background-color: #fff;
+  border: 2px solid #000;
 }
 
 .dark__theme-bg {
